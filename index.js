@@ -7,9 +7,9 @@ const app = express();
 
 app.use(express.static(path.join(__dirname,"client")));
 app.use(bodyParser.json());
-const publicVapidKey = "BJZliZvDe0wQR_eFF0RfXHJCmEeyqie8VRiOMOostIyIQ0VMrDgmzdfpGgIzuQ_3UnQrwPQLu_bKr4_AJavLZmk";
+const publicVapidKey = "PubKey";
 
-const privateVapidKey = "FghkGGuVySith1APcGqUsY3bnTAPtHwjAzNNVp9Bqn4";
+const privateVapidKey = "PvtKEY";
 
 webpush.setVapidDetails('mailto:visheshjindal368@gmail.com',publicVapidKey,privateVapidKey);
 //subscribe Route
